@@ -7,18 +7,18 @@ public class InvestCalc {
 
         System.out.println("Введите начальную сумму вклада: ");
         float currentSum = scanner.nextFloat();
-        System.out.print("Введите количество месяцев: ");
+        System.out.println("Введите количество месяцев: ");
         int months = scanner.nextInt();
         float monthlyPercent = 0.07f;
         //for (int i = 1; i <= months; i++) {
         //   currentSum = currentSum + (currentSum * monthlyPercent);
 
-        // System.out.println("Конечная сумма вклада через " + months +" месяцев: " + currentSum);
+        // System.out.println("Итоговая сумма вклада через " + months +" месяцев: " + currentSum);
 
             int counter = 1;
             while(counter <= months) {
                 currentSum = currentSum + (currentSum * monthlyPercent);
-                System.out.println("Конечная сумма вклада через " + months +" месяцев: " + currentSum);
+                System.out.println("Итоговая сумма вклада через " + months +" месяцев: " + currentSum);
                 counter++;
 
             }
